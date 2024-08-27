@@ -27,10 +27,10 @@
 @import url('https://fonts.googleapis.com/css2?family=JetBrains+Mono');
 // @import url('https://fonts.googleapis.com/css2?family=Ubuntu+Mono');
 
-// $backgroundColor: #fff;
+$backgroundColor: #fff;
 
-// $mainColor: #000;
-// $headingColor: #111;
+$mainColor: #000;
+$headingColor: #111;
 
 $mainFontSize: 2em;
 // $mainFont: 'Roboto', sans-serif;
@@ -267,15 +267,24 @@ kbd {
 }
 
 .reveal .slide-background:after {
-	content: "Authors - Title - Venue Year";
+	content: 'Gruschack et. al - Decentralized Multi-Drone Coordination for Wildlife Video Acquisition - ACSOS 2024';
 	position: absolute;
 	bottom: 2.5%;
 	right: 6%;
-	z-index: -1;
+	z-index: 1;
 	color: $detailBackgroundColor;
 	font-size: .8em;
   }
 
+//   .reveal .slide-background:before {
+// 	content: "background image adapted from: Diego Delso, delso.photo, License CC BY-SA";
+// 	position: absolute;
+// 	bottom: 0.5%;
+// 	right: 6%;
+// 	z-index: 1;
+// 	color: $detailBackgroundColor;
+// 	font-size: .5em;
+//   }
 
   // Multicolumn styling
 
@@ -283,8 +292,8 @@ kbd {
 	// draw a red border
 	// border: 1px solid red;
 	text-align: left;
-	border: .2em dashed $detailBackgroundColor;
-	border-style: double;
+	border: .02em dashed $detailBackgroundColor;
+	border-style: none;
 	border-radius: 1em;
 	padding: 0.5em;
 }
@@ -292,8 +301,67 @@ kbd {
 .reveal div.container {
 	// border: 1px solid red;
 	align-self: center;
-	min-width: 90%;
+	min-width: 100%;
 	margin-right: 5%;
 	margin-left: 5%;
 	margin-top: 1em;
 }
+
+// BLUR
+
+@-webkit-keyframes blur-animation {
+	0% {
+	  -webkit-filter: blur(0px) ;
+	  -moz-filter: blur(0px);
+	  -o-filter: blur(0px);
+	  -ms-filter: blur(0px);
+	  filter: blur(0px);
+
+	}
+	100% {
+	  -webkit-filter: blur(4px) saturate(.5) brightness(.8);
+	  -moz-filter: blur(5px) saturate(.7) brightness(.9);
+	  -o-filter: blur(5px) saturate(.7) brightness(.9);
+	  -ms-filter: blur(5px)saturate(.7) brightness(.9);
+	  filter: blur(6px) saturate(1) brightness(.2);
+	}
+  }
+
+  html.blur-animation .backgrounds {
+	 -webkit-animation-name: blur-animation;
+	 -webkit-animation-duration: 1s;
+	 -webkit-animation-iteration-count: 1;
+	 -webkit-animation-direction: alternate;
+	 -webkit-animation-timing-function: ease-out;
+	 -webkit-animation-fill-mode: forwards;
+	 -webkit-animation-delay: 0s;
+   }
+
+   @-webkit-keyframes blur-animation-light {
+	0% {
+	  -webkit-filter: blur(0px) ;
+	  -moz-filter: blur(0px);
+	  -o-filter: blur(0px);
+	  -ms-filter: blur(0px);
+	  filter: blur(0px);
+
+	}
+	100% {
+	  -webkit-filter: blur(6px) contrast(0.5) saturate(3) brightness(2) contrast(0.5) brightness(1.3) ;
+	  -moz-filter: blur(6px) contrast(0.5) saturate(3) brightness(2) contrast(0.5) brightness(1.3) ;
+	  -o-filter: blur(6px) contrast(0.5) saturate(3) brightness(2) contrast(0.5) brightness(1.3) ;
+	  -ms-filter: blur(6px) contrast(0.5) saturate(3) brightness(2) contrast(0.5) brightness(1.3) ;
+	  filter: blur(6px) contrast(0.5) saturate(3) brightness(2) contrast(0.5) brightness(1.3) ;
+	}
+  }
+
+  html.blur-animation-light .backgrounds {
+	 -webkit-animation-name: blur-animation-light;
+	 -webkit-animation-duration: 1s;
+	 -webkit-animation-iteration-count: 1;
+	 -webkit-animation-direction: alternate;
+	 -webkit-animation-timing-function: ease-out;
+	 -webkit-animation-fill-mode: forwards;
+	 -webkit-animation-delay: 0s;
+   }
+

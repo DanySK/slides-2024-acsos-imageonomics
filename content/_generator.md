@@ -1,19 +1,238 @@
 
 +++
 
-title = "Guide for writing markdown slides"
-description = "A Hugo theme for creating Reveal.js presentations"
+title = "Decentralized Multi-Drone Coordination for Wildlife Video Acquisition"
+description = "ACSOS 2024 main-track paper presentation"
 outputs = ["Reveal"]
-aliases = [
-    "/guide/"
-]
 
 +++
 
+{{< slide background-image="zebras.jpg" >}}
 
-# Short guide to Markdown slides
+<div
+style="
+position: fixed;
+/* bottom: 0;
+right: 0; */
+font-size: .3em;
+top: 800px;
+left: 50%;
+transform: translate(-50%, -50%);
+"
+>background image adapted from: Diego Delso, delso.photo, License CC BY-SA</div>
+
+# Decentralized Multi-Drone Coordination for Wildlife Video Acquisition
+
+[Denys Grushchak](denys.grushchak@studio.unibo.it) <i class="fa-solid fa-computer"></i>,
+[Jenna Kline](kline.377@osu.edu) <i class="fa-solid fa-horse"></i>,
+[Danilo Pianini](danilo.pianini@unibo.it) <i class="fa-solid fa-computer"></i>, <br>
+[Nicolas Farabegoli](nicolas.farabegoli@unibo.it) <i class="fa-solid fa-computer"></i>,
+[Gianluca Aguzzi](gianluca.aguzzi@unibo.it) <i class="fa-solid fa-computer"></i>,
+[Martina Baiardi](m.baiardi@unibo.it) <i class="fa-solid fa-computer"></i>,
+and
+[Christopher Stewart](cstewart@cse.ohio-state.edu) <i class="fa-solid fa-horse"></i>
+
+{{% multicol %}}
+{{% col %}}
+<div style="text-align: center; width: 100%;">
+<img src="example-background.svg" style="width: 50%" />
+</div>
+
+<i class="fa-solid fa-computer"></i> Department of Computer Science and Engineering, University of Bologna, Cesena (FC), Italy
+{{% /col %}}
+{{% col %}}
+<div style="text-align: center; width: 100%;">
+<img src="osu.svg" style="width: 50%" />
+</div>
+
+<i class="fa-solid fa-horse"></i> Computer Science and Engineering Department, The Ohio State University, Columbus (OH), USA
+{{% /col %}}
+{{% /multicol %}}
 
 ---
+
+{{< slide background-image="zebras.jpg" >}}
+
+# Wildlife behavior acquisition
+
+A paramount tool for *ethologists* and *biologists* to gather insights into the nature and inform
+**conservation** efforts for **endangered species**.
+
+* {{% fragment %}} Animal *health* monitoring {{% /fragment %}}
+* {{% fragment %}} *Behavioral changes* induced by *climate change* or *human activity*{{% /fragment %}}
+* {{% fragment %}} Current *population level*{{% /fragment %}}
+* {{% fragment %}} Insights into *future population levels*{{% /fragment %}}
+
+---
+
+{{< slide background-image="collar.jpg" >}}
+
+<div
+style="
+position: fixed;
+/* bottom: 0;
+right: 0; */
+font-size: .3em;
+top: -500px;
+left: 50%;
+transform: translate(-50%, -50%);
+"
+>background image: Abujoy, License CC BY-SA</div>
+
+---
+
+{{< slide background-image="collarblur.jpg" >}}
+
+<div
+style="
+position: fixed;
+/* bottom: 0;
+right: 0; */
+font-size: .3em;
+top: -500px;
+left: 50%;
+transform: translate(-50%, -50%);
+"
+>background image derived from: Abujoy, License CC BY-SA</div>
+
+---
+
+{{< slide background-image="collarblur2.jpg" >}}
+
+# GPS collars
+
+* {{% tick %}} Great position tracking
+* {{% tick %}} Possibly equipped with further sensors (temperature, accelerometer...)
+* {{% tick %}} Long battery life
+* {{% cross %}} No video
+* {{% cross %}} Invasive (requires capture and release) $\Rightarrow$ Limited sample size
+
+---
+
+{{< slide background-image="trap.jpg" >}}
+
+<div
+style="
+position: fixed;
+/* bottom: 0;
+right: 0; */
+font-size: .3em;
+top: -500px;
+left: 0%;
+transform: translate(-50%, -50%);
+color: white;
+"
+>author: Arddu, License CC Attribution 2.0 Generic</div>
+
+---
+
+{{< slide background-image="trap2.jpg" >}}
+
+<div
+style="
+position: fixed;
+/* bottom: 0;
+right: 0; */
+font-size: .3em;
+top: -500px;
+left: 0%;
+transform: translate(-50%, -50%);
+color: white;
+"
+>author: Winterline, License CC Attribution-Share Alike 3.0 Unported</div>
+
+---
+
+{{< slide background-image="trap3.jpg" >}}
+
+<div
+style="
+position: fixed;
+/* bottom: 0;
+right: 0; */
+font-size: .3em;
+top: -500px;
+left: 0%;
+transform: translate(-50%, -50%);
+color: white;
+"
+>author: Kalyan Varma, License CC BY-SA</div>
+
+---
+
+{{< slide background-image="trap3-blur.jpg" >}}
+
+---
+
+{{< slide background-image="trap-setup.jpg" >}}
+
+<div
+style="
+position: fixed;
+/* bottom: 0;
+right: 0; */
+font-size: .3em;
+top: -500px;
+left: 0%;
+transform: translate(-50%, -50%);
+color: blue;
+"
+>author: Prashanthns, License CC BY-SA</div>
+
+---
+
+{{< slide background-image="trap-setup-blur.jpg" >}}
+
+# Camera traps
+
+* {{% tick %}} Photos and potentially videos
+* {{% tick %}} Non-invasive
+* {{% tick %}} Multiple species
+* {{% cross %}} Static and with limited range
+* {{% cross %}} False triggers
+* {{% cross %}} Subject to vandalism and theft
+* {{% cross %}} Generally fragile (the tiger in the first picture destroyed the camera)
+
+---
+
+{{< slide background-video="nadir.mkv" background-video-loop="true" background-video-muted="true" >}}
+
+---
+
+{{< slide background-video="nadir.mkv" background-video-loop="true" background-video-muted="true" background-opacity="0.2" >}}
+
+# Fixed-wing drone aerial views
+
+
+* {{% tick %}} *Large area* coverage
+* {{% tick %}} *Long flights*
+* {{% cross %}} **Nadir** imagery: good for mapping, bad for *individual behavior*
+* {{% cross %}} Requires *specialized training*
+* {{% cross %}} *Predefined* flight paths
+
+---
+
+{{< slide background-video="nonnadir.mkv" background-video-loop="true" background-video-muted="true" >}}
+
+---
+
+{{< slide background-video="nonnadir.mkv" background-video-loop="true" background-video-muted="true" background-opacity="0.2" >}}
+
+# Quadcopters and similar drones
+
+* {{% tick %}} *Large area* coverage
+* {{% tick %}} **non-Nadir** great for *individual behavior*
+* {{% cross %}} Requires *specialized training*
+* {{% cross %}} *Predefined* flight paths
+
+![](non-nadir-fov.svg)
+
+---
+
+{{< slide background-iframe="https://www.youtube.com/embed/c0FtiZUO9Kg?si=hKEZcilEFRt_xx1c&autoplay=1&controls=0&showinfo=0&autohide=1" background-interactive="true" >}}
+
+---
+
 
 # Headers
 
@@ -88,8 +307,8 @@ Column 2
 
 ## Tick and Cross
 
-{{% tick %}} This is something good {{% /tick %}}
-{{% cross %}} This is something good {{% /cross %}}
+{{% tick %}} This is something good
+{{% cross %}} This is something good
 
 ---
 

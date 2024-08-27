@@ -1,6 +1,6 @@
-baseURL = "https://danysk.github.io/Template-Hugo-Reveal-Slides"
+baseURL = "https://danysk.github.io/slides-2024-acsos-imageonomics"
 languageCode = "en-us"
-title = "A Hugo theme for creating Reveal.js presentations"
+title = "Decentralized Multi-Drone Coordination for Wildlife Video Acquisition"
 disableKinds = ["sitemap", "RSS"]
 theme = "reveal-hugo"
 publishDir = "build"
