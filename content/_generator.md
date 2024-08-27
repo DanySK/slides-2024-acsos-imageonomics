@@ -222,8 +222,11 @@ color: blue;
 
 * {{% tick %}} *Large area* coverage
 * {{% tick %}} **non-Nadir** great for *individual behavior*
-* {{% cross %}} Requires *specialized training*
-* {{% cross %}} *Predefined* flight paths
+* {{% tick %}} **Multiple** drones can get *different perspectives*
+    * {{% cross %}} **Practically impossible** to coordinate by hand
+* {{% cross %}} *Noise* may disturb wildlife
+* {{% cross %}} *Skilled pilots* required
+* {{% cross %}} Relatively *short battery life*
 
 ![](non-nadir-fov.svg)
 
