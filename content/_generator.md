@@ -386,7 +386,16 @@ The final *normalized noise metric* is thus $\rho(z) = \Phi\left(h(L_{P_T}(z)); 
 
 ---
 
-{{< slide background-image="zebras.jpg" >}}
+{{< slide background-image="linpro.gif" >}}
+
+<div style="position: absolute; left: 0px; top: 0px">
+
+# plain LinPro
+</div>
+
+---
+
+{{< slide background-image="linpro.gif" background-opacity="0.2" >}}
 
 # Herd-sensitive tracking
 
@@ -414,14 +423,48 @@ then each drone, locally, performs a *recursive hierarchical agglomerative clust
 
 ---
 
+{{< slide background-image="linproc.gif" >}}
+
+<div style="position: absolute; left: 0px; top: 0px">
+
+# LinPro + clustering
+</div>
+
+---
+
 # Evaluation
 
-* Simulation of a 2x2km arena realized in Alchemist¹, algorithms written in Protelis²
+* Simulation of a *2x2km arena* realized in Alchemist¹, algorithms written in Protelis²
     * aggregate computing³ worked quite well for the decentralized coordination
-* video capture session of 30 minutes (to avoid concerns related to battery life)
-* 140 grazing zebras, moving at a maximum speed of $2\frac{m}{s}$ split in 2, 4, or 8 separate herds
+* video capture *session of 30 minutes* (to avoid concerns related to battery life)
+* *140 grazing zebras*, moving at a maximum speed of $2\frac{m}{s}$ split in 2, 4, or 8 separate herds
 * *drone-to-herd ratio* of 1:1, 2:1, and 3:1.
 * drones can move at $10\frac{m}{s}$ and have a line-of-sight communication range of $1km$.
+* Experiments available and reproducible: https://github.com/nicolasfara/experiments-2024-ACSOS-imageonomics-drones [![DOI](https://zenodo.org/badge/DOI/10.5281/zenodo.10931792.svg)](https://zenodo.org/doi/10.5281/zenodo.10931792)
+
+<div id="qrcode0" style="position: absolute; right: 0px; top: 0px"></div>
+<script type="text/javascript">
+    const qrCode = new QRCodeStyling({
+        width: 300,
+        height: 300,
+        type: "svg",
+        data: "https://github.com/nicolasfara/experiments-2024-ACSOS-imageonomics-drones",
+        image: "https://upload.wikimedia.org/wikipedia/commons/9/91/Octicons-mark-github.svg",
+        dotsOptions: {
+            color: "#0000AA ",
+            type: "rounded"
+        },
+        backgroundOptions: {
+            color: "#ffffffff",
+        },
+        imageOptions: {
+            crossOrigin: "anonymous",
+            margin: 10
+        }
+    });
+    qrCode.append(document.getElementById("qrcode0"));
+    qrCode.download({ name: "qr", extension: "svg" });
+</script>
 
 <span style="text-align: left; font-size: 0.5em; position: absolute; left: 0em; bottom: -15em">
 
