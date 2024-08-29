@@ -262,7 +262,7 @@ color: blue;
 In the *Online Multi-Object k-Coverage* (**OMOkC**) problem,
 dones coordinate to cover each *interesting* target with at least $k$ points of view.
 
-<video width="1600" height="450" autoplay loop>
+<video width="1600" height="450" autoplay muted loop>
   <source src="omokc.mp4" type="video/mp4">
   <source src="omokc.webm" type="video/webm">
   Your browser does not support the video tag.
