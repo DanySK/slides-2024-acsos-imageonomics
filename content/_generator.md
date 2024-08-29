@@ -268,7 +268,7 @@ dones coordinate to cover each *interesting* target with at least $k$ points of 
   Your browser does not support the video tag.
 </video>
 
-Our problem is a variant of , in which:
+Our problem is a variant of OMOkC, in which:
 
 1. {{% fragment %}}The focus is on animal *groups* rather than single animals $\Rightarrow$ **Herd tracking**{{% /fragment %}}
 2. {{% fragment %}}Drones have a *blind zone* due to their non-nadir point of view $\Rightarrow$ **Blind zone**{{% /fragment %}}
