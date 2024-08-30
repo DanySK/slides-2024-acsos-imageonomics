@@ -260,10 +260,10 @@ kbd {
 	background-position: 0.45% 99.2%;
 	background-size: 15%;
 	background-clip: border-box;
-	border-radius: 30px;
-	border-style: solid;
+	border-radius: 30px 30x;
+	border-style: hidden;
 	border-color: $detailBackgroundColor;
-	border-width: 0.3em;
+	border-width: 0.3em 0.3em;
 }
 
 .reveal .slide-background:after {
