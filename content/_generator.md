@@ -23,12 +23,12 @@ transform: translate(-50%, -50%);
 
 # Decentralized Multi-Drone Coordination for Wildlife Video Acquisition
 
-[Denys Grushchak](denys.grushchak@studio.unibo.it) <i class="fa-solid fa-computer"></i>,
-[Jenna Kline](kline.377@osu.edu) <i class="fa-solid fa-horse"></i>,
-[Danilo Pianini](danilo.pianini@unibo.it) <i class="fa-solid fa-computer"></i>, <br>
-[Nicolas Farabegoli](nicolas.farabegoli@unibo.it) <i class="fa-solid fa-computer"></i>,
-[Gianluca Aguzzi](gianluca.aguzzi@unibo.it) <i class="fa-solid fa-computer"></i>,
-[Martina Baiardi](m.baiardi@unibo.it) <i class="fa-solid fa-computer"></i>,
+[Denys Grushchak](mailto:denys.grushchak@studio.unibo.it) <i class="fa-solid fa-computer"></i>,
+[Jenna Kline](mailto:kline.377@osu.edu) <i class="fa-solid fa-horse"></i>,
+[Danilo Pianini](mailto:danilo.pianini@unibo.it) <i class="fa-solid fa-computer"></i>, <br>
+[Nicolas Farabegoli](mailto:nicolas.farabegoli@unibo.it) <i class="fa-solid fa-computer"></i>,
+[Gianluca Aguzzi](mailto:gianluca.aguzzi@unibo.it) <i class="fa-solid fa-computer"></i>,
+[Martina Baiardi](mailto:m.baiardi@unibo.it) <i class="fa-solid fa-computer"></i>,
 and
 [Christopher Stewart](cstewart@cse.ohio-state.edu) <i class="fa-solid fa-horse"></i>
 
